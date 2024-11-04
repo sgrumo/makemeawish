@@ -9,15 +9,19 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@hookform/resolvers": "^3.9.1",
     "clsx": "^2.1.1",
+    "firebase": "^11.0.1",
     "next": "15.0.2",
     "pattycake": "^0.0.2",
-    "react": "19.0.0-rc-02c0e824-20241028",
-    "react-dom": "19.0.0-rc-02c0e824-20241028",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-hook-form": "^7.53.1",
     "ts-pattern": "^5.5.0",
     "zod": "^3.23.8"
   },
   "devDependencies": {
+    "@types/firebase": "^3.2.3",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
