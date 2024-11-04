@@ -14,16 +14,19 @@
     "@sentry/nextjs": "^8.36.0",
     "clsx": "^2.1.1",
     "firebase": "^11.0.1",
+    "jsonwebtoken": "^9.0.2",
     "next": "15.0.2",
     "pattycake": "^0.0.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-hook-form": "^7.53.1",
     "ts-pattern": "^5.5.0",
-    "zod": "^3.23.8"
+    "zod": "^3.23.8",
+    "zustand": "^5.0.1"
   },
   "devDependencies": {
     "@types/firebase": "^3.2.3",
+    "@types/jsonwebtoken": "^9.0.7",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",

@@ -1,6 +1,6 @@
 'use client'
 
-import Input from '@/app/components/forms/input'
+import Input from '@/lib/components/forms/input'
 import { signUp } from '@/lib/firebase/auth'
 import { AuthCredentials, AuthCredentialsSchema } from '@/lib/schemas/auth'
 import { ResultType } from '@/lib/utils/algebraic'

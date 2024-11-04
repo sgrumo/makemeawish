@@ -7,7 +7,8 @@ import {
     type User,
     UserCredential, onAuthStateChanged as _onAuthStateChanged,
     createUserWithEmailAndPassword,
-    getAuth, signInWithEmailAndPassword, signInWithPopup,
+    getAuth,
+    signInWithEmailAndPassword, signInWithPopup
 } from "firebase/auth";
 import { AuthCredentials } from "../schemas/auth";
 import { Error, Ok, Result } from "../utils/algebraic";
