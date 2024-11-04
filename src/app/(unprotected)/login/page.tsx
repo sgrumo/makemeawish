@@ -2,6 +2,7 @@
 
 import { signInWithGoogle } from '@/lib/firebase/auth'
 import { ResultType } from '@/lib/utils/algebraic'
+import { captureError } from '@/lib/utils/errors'
 import { match } from 'ts-pattern'
 
 const LoginPage = () => {
@@ -12,7 +13,7 @@ const LoginPage = () => {
                 console.log(userCredential.result)
             })
             .with({ resultType: ResultType.Error }, error => {
-                console.error(error)
+                captureError(error)
             })
     }
     return (

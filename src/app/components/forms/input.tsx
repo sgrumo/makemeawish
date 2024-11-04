@@ -21,6 +21,7 @@ const Input = <T extends FieldValues>(props: InputProps<T>) => {
                 placeholder={props.placeholder}
                 {...props.register(props.fieldName)}
             />
+            {props.error && <span>{props.error.message}</span>}
         </div>
     )
 }

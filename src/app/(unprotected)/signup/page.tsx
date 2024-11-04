@@ -9,7 +9,11 @@ import { useForm } from 'react-hook-form'
 import { match } from 'ts-pattern'
 
 const SignupPage = () => {
-    const { handleSubmit, register } = useForm<AuthCredentials>({
+    const {
+        handleSubmit,
+        register,
+        formState: { errors },
+    } = useForm<AuthCredentials>({
         resolver: zodResolver(AuthCredentialsSchema),
         mode: 'onChange',
     })
@@ -25,11 +29,17 @@ const SignupPage = () => {
     return (
         <>
             <form onSubmit={handleSubmit(signupSubmit)}>
-                <Input type="email" register={register} fieldName="email" />
+                <Input
+                    type="email"
+                    fieldName="email"
+                    register={register}
+                    error={errors.email}
+                />
                 <Input
                     type="password"
-                    register={register}
                     fieldName="password"
+                    register={register}
+                    error={errors.password}
                 />
                 <button type="submit">Submit</button>
             </form>
